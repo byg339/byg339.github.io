@@ -3,19 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的网站</title>
+    <title>我的个人主站</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        .hero-section {
+            background-color: #f8f9fa; /* 浅灰色背景 */
+            padding: 80px 0; /* 上下留白 */
+            text-align: center;
+        }
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #0d6efd; /* 蓝色图标 */
+        }
+    </style>
 </head>
 <body>
 
-    <h1>你好，世界！</h1>
-    
-    <h2>这是我的第一个网站</h2>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">MyOrg Site</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">首页</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">关于我们</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">项目列表</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <p>这是我想要显示的一段普通文本。在这里你可以写很长很长的内容。</p>
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="display-4 fw-bold">欢迎来到我的主页</h1>
+            <p class="lead text-muted">这是一个基于 GitHub Pages 和 Bootstrap 构建的现代化网页。</p>
+            <a href="#" class="btn btn-primary btn-lg mt-3">了解更多</a>
+        </div>
+    </header>
 
-    <p>这是第二段文本，浏览器会自动在这两段之间留出空隙。</p>
+    <main class="container py-5">
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="feature-icon">🚀</div>
+                <h3>快速部署</h3>
+                <p>利用 GitHub 的基础设施，全球 CDN 加速，无需配置服务器。</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="feature-icon">🎨</div>
+                <h3>现代设计</h3>
+                <p>使用 Bootstrap 5 框架，自适应手机和电脑屏幕。</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="feature-icon">🛠️</div>
+                <h3>完全开源</h3>
+                <p>代码透明，随时修改，支持自定义域名绑定。</p>
+            </div>
+        </div>
+    </main>
 
-    <p>这是一行文字，<br>但我在这里强制换行了。</p>
+    <footer class="bg-light py-4 mt-auto">
+        <div class="container text-center text-muted">
+            <p class="mb-0">&copy; 2025 My Organization. 保留所有权利。</p>
+        </div>
+    </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
